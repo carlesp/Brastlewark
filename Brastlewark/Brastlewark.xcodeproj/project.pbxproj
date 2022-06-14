@@ -1,0 +1,969 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A729B4F6285742730058FE19 /* GetGnomesThumbnailUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A729B4F5285742730058FE19 /* GetGnomesThumbnailUseCase.swift */; };
+		A729B4F8285749EE0058FE19 /* ThumbnailRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A729B4F7285749EE0058FE19 /* ThumbnailRepository.swift */; };
+		A729B4FD285755AD0058FE19 /* DefaultThumbnailRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A729B4FC285755AD0058FE19 /* DefaultThumbnailRepository.swift */; };
+		A729B5002857582A0058FE19 /* FileCacheStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A729B4FF2857582A0058FE19 /* FileCacheStorage.swift */; };
+		A729B505285783DA0058FE19 /* GnomeDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A729B504285783DA0058FE19 /* GnomeDetailHeaderView.swift */; };
+		A729B507285783EB0058FE19 /* GnomeDetailItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A729B506285783EB0058FE19 /* GnomeDetailItemCell.swift */; };
+		A729B50928578A570058FE19 /* GnomeDetailViewController+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A729B50828578A570058FE19 /* GnomeDetailViewController+Layout.swift */; };
+		A7E318232851DE82005971ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E318222851DE82005971ED /* AppDelegate.swift */; };
+		A7E3182C2851DE82005971ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7E3182B2851DE82005971ED /* Assets.xcassets */; };
+		A7E3182F2851DE82005971ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7E3182D2851DE82005971ED /* LaunchScreen.storyboard */; };
+		A7E3183A2851DE82005971ED /* BrastlewarkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E318392851DE82005971ED /* BrastlewarkTests.swift */; };
+		A7E318442851DE82005971ED /* BrastlewarkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E318432851DE82005971ED /* BrastlewarkUITests.swift */; };
+		A7E318462851DE82005971ED /* BrastlewarkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E318452851DE82005971ED /* BrastlewarkUITestsLaunchTests.swift */; };
+		A7E318592851E461005971ED /* Gnome.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E318582851E461005971ED /* Gnome.swift */; };
+		A7E3185D2851E86E005971ED /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E3185C2851E86E005971ED /* Endpoint.swift */; };
+		A7E3185F2851E9A6005971ED /* NetworkConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E3185E2851E9A6005971ED /* NetworkConfiguration.swift */; };
+		A7E318612851EC4C005971ED /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E318602851EC4C005971ED /* NetworkService.swift */; };
+		A7E318642851FB68005971ED /* APIEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E318632851FB68005971ED /* APIEndpoints.swift */; };
+		A7E318672851FBCA005971ED /* GnomeTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E318662851FBCA005971ED /* GnomeTO.swift */; };
+		A7E3186A2851FC6F005971ED /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E318692851FC6F005971ED /* ApiManager.swift */; };
+		A7E3186D285208C6005971ED /* ApiCompletionTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E3186C285208C6005971ED /* ApiCompletionTransformer.swift */; };
+		A7E3187028520929005971ED /* ModelMappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E3186F28520929005971ED /* ModelMappers.swift */; };
+		A7E3187328520B18005971ED /* Cancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E3187228520B18005971ED /* Cancellable.swift */; };
+		A7E3187528520B26005971ED /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E3187428520B26005971ED /* Mapper.swift */; };
+		A7E3187728520BA5005971ED /* NetworkTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E3187628520BA5005971ED /* NetworkTask.swift */; };
+		A7E3187A28520FF9005971ED /* GnomesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E3187928520FF9005971ED /* GnomesRepository.swift */; };
+		A7E3187D28521079005971ED /* GetGnomesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E3187C28521079005971ED /* GetGnomesUseCase.swift */; };
+		A7E3188028521243005971ED /* DefaultGnomesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E3187F28521243005971ED /* DefaultGnomesRepository.swift */; };
+		A7E318872852149E005971ED /* GnomesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E318862852149E005971ED /* GnomesListViewController.swift */; };
+		A7E3188A2852150B005971ED /* GnomesRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E318892852150B005971ED /* GnomesRouter.swift */; };
+		A7E3188C28522835005971ED /* GnomesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E3188B28522835005971ED /* GnomesListViewModel.swift */; };
+		A7E3188E28522882005971ED /* GnomesListViewController+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E3188D28522882005971ED /* GnomesListViewController+Layout.swift */; };
+		A7E318912852290F005971ED /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E318902852290F005971ED /* UIView+Extensions.swift */; };
+		A7E31895285229F4005971ED /* GnomesListItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E31894285229F4005971ED /* GnomesListItemCell.swift */; };
+		A7E3189B285231E9005971ED /* AppDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E3189A285231E9005971ED /* AppDIContainer.swift */; };
+		A7E3189E2852320E005971ED /* AppConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E3189D2852320E005971ED /* AppConfigurations.swift */; };
+		A7E318A028523300005971ED /* GnomesSceneDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E3189F28523300005971ED /* GnomesSceneDIContainer.swift */; };
+		A7E318A228523769005971ED /* AppRouterCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E318A128523769005971ED /* AppRouterCoordinator.swift */; };
+		A7E318A628523B6B005971ED /* GnomeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E318A528523B6B005971ED /* GnomeDetailViewController.swift */; };
+		A7E318A828523B76005971ED /* GnomeDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E318A728523B76005971ED /* GnomeDetailViewModel.swift */; };
+		A7E318AA2852408C005971ED /* ResponseTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E318A92852408C005971ED /* ResponseTO.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A7E318362851DE82005971ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7E318172851DE82005971ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7E3181E2851DE82005971ED;
+			remoteInfo = Brastlewark;
+		};
+		A7E318402851DE82005971ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A7E318172851DE82005971ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A7E3181E2851DE82005971ED;
+			remoteInfo = Brastlewark;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A729B4F5285742730058FE19 /* GetGnomesThumbnailUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetGnomesThumbnailUseCase.swift; sourceTree = "<group>"; };
+		A729B4F7285749EE0058FE19 /* ThumbnailRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThumbnailRepository.swift; sourceTree = "<group>"; };
+		A729B4FC285755AD0058FE19 /* DefaultThumbnailRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultThumbnailRepository.swift; sourceTree = "<group>"; };
+		A729B4FF2857582A0058FE19 /* FileCacheStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileCacheStorage.swift; sourceTree = "<group>"; };
+		A729B504285783DA0058FE19 /* GnomeDetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GnomeDetailHeaderView.swift; sourceTree = "<group>"; };
+		A729B506285783EB0058FE19 /* GnomeDetailItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GnomeDetailItemCell.swift; sourceTree = "<group>"; };
+		A729B50828578A570058FE19 /* GnomeDetailViewController+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GnomeDetailViewController+Layout.swift"; sourceTree = "<group>"; };
+		A7E3181F2851DE82005971ED /* Brastlewark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brastlewark.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7E318222851DE82005971ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A7E3182B2851DE82005971ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A7E3182E2851DE82005971ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A7E318302851DE82005971ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7E318352851DE82005971ED /* BrastlewarkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrastlewarkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7E318392851DE82005971ED /* BrastlewarkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrastlewarkTests.swift; sourceTree = "<group>"; };
+		A7E3183F2851DE82005971ED /* BrastlewarkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BrastlewarkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7E318432851DE82005971ED /* BrastlewarkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrastlewarkUITests.swift; sourceTree = "<group>"; };
+		A7E318452851DE82005971ED /* BrastlewarkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrastlewarkUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A7E318582851E461005971ED /* Gnome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gnome.swift; sourceTree = "<group>"; };
+		A7E3185C2851E86E005971ED /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		A7E3185E2851E9A6005971ED /* NetworkConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfiguration.swift; sourceTree = "<group>"; };
+		A7E318602851EC4C005971ED /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		A7E318632851FB68005971ED /* APIEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoints.swift; sourceTree = "<group>"; };
+		A7E318662851FBCA005971ED /* GnomeTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GnomeTO.swift; sourceTree = "<group>"; };
+		A7E318692851FC6F005971ED /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		A7E3186C285208C6005971ED /* ApiCompletionTransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCompletionTransformer.swift; sourceTree = "<group>"; };
+		A7E3186F28520929005971ED /* ModelMappers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelMappers.swift; sourceTree = "<group>"; };
+		A7E3187228520B18005971ED /* Cancellable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cancellable.swift; sourceTree = "<group>"; };
+		A7E3187428520B26005971ED /* Mapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; };
+		A7E3187628520BA5005971ED /* NetworkTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTask.swift; sourceTree = "<group>"; };
+		A7E3187928520FF9005971ED /* GnomesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GnomesRepository.swift; sourceTree = "<group>"; };
+		A7E3187C28521079005971ED /* GetGnomesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetGnomesUseCase.swift; sourceTree = "<group>"; };
+		A7E3187F28521243005971ED /* DefaultGnomesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultGnomesRepository.swift; sourceTree = "<group>"; };
+		A7E318862852149E005971ED /* GnomesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GnomesListViewController.swift; sourceTree = "<group>"; };
+		A7E318892852150B005971ED /* GnomesRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GnomesRouter.swift; sourceTree = "<group>"; };
+		A7E3188B28522835005971ED /* GnomesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GnomesListViewModel.swift; sourceTree = "<group>"; };
+		A7E3188D28522882005971ED /* GnomesListViewController+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GnomesListViewController+Layout.swift"; sourceTree = "<group>"; };
+		A7E318902852290F005971ED /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		A7E31894285229F4005971ED /* GnomesListItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GnomesListItemCell.swift; sourceTree = "<group>"; };
+		A7E3189A285231E9005971ED /* AppDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDIContainer.swift; sourceTree = "<group>"; };
+		A7E3189D2852320E005971ED /* AppConfigurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigurations.swift; sourceTree = "<group>"; };
+		A7E3189F28523300005971ED /* GnomesSceneDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GnomesSceneDIContainer.swift; sourceTree = "<group>"; };
+		A7E318A128523769005971ED /* AppRouterCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouterCoordinator.swift; sourceTree = "<group>"; };
+		A7E318A528523B6B005971ED /* GnomeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GnomeDetailViewController.swift; sourceTree = "<group>"; };
+		A7E318A728523B76005971ED /* GnomeDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GnomeDetailViewModel.swift; sourceTree = "<group>"; };
+		A7E318A92852408C005971ED /* ResponseTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseTO.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A7E3181C2851DE82005971ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7E318322851DE82005971ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7E3183C2851DE82005971ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A729B4FE285758190058FE19 /* CacheStorage */ = {
+			isa = PBXGroup;
+			children = (
+				A729B4FF2857582A0058FE19 /* FileCacheStorage.swift */,
+			);
+			path = CacheStorage;
+			sourceTree = "<group>";
+		};
+		A729B503285783CA0058FE19 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A729B504285783DA0058FE19 /* GnomeDetailHeaderView.swift */,
+				A729B506285783EB0058FE19 /* GnomeDetailItemCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		A7E318162851DE82005971ED = {
+			isa = PBXGroup;
+			children = (
+				A7E318212851DE82005971ED /* Brastlewark */,
+				A7E318382851DE82005971ED /* BrastlewarkTests */,
+				A7E318422851DE82005971ED /* BrastlewarkUITests */,
+				A7E318202851DE82005971ED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A7E318202851DE82005971ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A7E3181F2851DE82005971ED /* Brastlewark.app */,
+				A7E318352851DE82005971ED /* BrastlewarkTests.xctest */,
+				A7E3183F2851DE82005971ED /* BrastlewarkUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A7E318212851DE82005971ED /* Brastlewark */ = {
+			isa = PBXGroup;
+			children = (
+				A7E318562851E41D005971ED /* Application */,
+				A7E318532851E40C005971ED /* Data */,
+				A7E318522851E406005971ED /* Domain */,
+				A7E318542851E411005971ED /* Presentation */,
+				A7E3185A2851E859005971ED /* Infrastructure */,
+				A7E318552851E417005971ED /* Resources */,
+			);
+			path = Brastlewark;
+			sourceTree = "<group>";
+		};
+		A7E318382851DE82005971ED /* BrastlewarkTests */ = {
+			isa = PBXGroup;
+			children = (
+				A7E318392851DE82005971ED /* BrastlewarkTests.swift */,
+			);
+			path = BrastlewarkTests;
+			sourceTree = "<group>";
+		};
+		A7E318422851DE82005971ED /* BrastlewarkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A7E318432851DE82005971ED /* BrastlewarkUITests.swift */,
+				A7E318452851DE82005971ED /* BrastlewarkUITestsLaunchTests.swift */,
+			);
+			path = BrastlewarkUITests;
+			sourceTree = "<group>";
+		};
+		A7E318522851E406005971ED /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				A7E3187B2852105B005971ED /* UseCases */,
+				A7E3187828520FC4005971ED /* Repositories */,
+				A7E3187128520B0E005971ED /* Common */,
+				A7E318572851E447005971ED /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		A7E318532851E40C005971ED /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A729B4FE285758190058FE19 /* CacheStorage */,
+				A7E318622851FB5C005971ED /* Network */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		A7E318542851E411005971ED /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				A7E3188F28522905005971ED /* Extensions */,
+				A7E31881285213BB005971ED /* GnomesScene */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		A7E318552851E417005971ED /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A7E318302851DE82005971ED /* Info.plist */,
+				A7E3182B2851DE82005971ED /* Assets.xcassets */,
+				A7E3182D2851DE82005971ED /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A7E318562851E41D005971ED /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				A7E318222851DE82005971ED /* AppDelegate.swift */,
+				A7E318A128523769005971ED /* AppRouterCoordinator.swift */,
+				A7E3189C285231FB005971ED /* Configurations */,
+				A7E31899285231DA005971ED /* DI */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		A7E318572851E447005971ED /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				A7E318582851E461005971ED /* Gnome.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		A7E3185A2851E859005971ED /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				A7E3185B2851E862005971ED /* Network */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		A7E3185B2851E862005971ED /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A7E3185C2851E86E005971ED /* Endpoint.swift */,
+				A7E3185E2851E9A6005971ED /* NetworkConfiguration.swift */,
+				A7E318602851EC4C005971ED /* NetworkService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A7E318622851FB5C005971ED /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A7E3187E28521232005971ED /* Repositories */,
+				A7E318682851FC65005971ED /* API */,
+				A7E318652851FBB4005971ED /* DataMapping */,
+				A7E318632851FB68005971ED /* APIEndpoints.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A7E318652851FBB4005971ED /* DataMapping */ = {
+			isa = PBXGroup;
+			children = (
+				A7E3186F28520929005971ED /* ModelMappers.swift */,
+				A7E3186E28520917005971ED /* Models */,
+			);
+			path = DataMapping;
+			sourceTree = "<group>";
+		};
+		A7E318682851FC65005971ED /* API */ = {
+			isa = PBXGroup;
+			children = (
+				A7E3186B285208BE005971ED /* Utils */,
+				A7E318692851FC6F005971ED /* ApiManager.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		A7E3186B285208BE005971ED /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A7E3186C285208C6005971ED /* ApiCompletionTransformer.swift */,
+				A7E3187628520BA5005971ED /* NetworkTask.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A7E3186E28520917005971ED /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A7E318662851FBCA005971ED /* GnomeTO.swift */,
+				A7E318A92852408C005971ED /* ResponseTO.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A7E3187128520B0E005971ED /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A7E3187228520B18005971ED /* Cancellable.swift */,
+				A7E3187428520B26005971ED /* Mapper.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A7E3187828520FC4005971ED /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				A7E3187928520FF9005971ED /* GnomesRepository.swift */,
+				A729B4F7285749EE0058FE19 /* ThumbnailRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		A7E3187B2852105B005971ED /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				A7E3187C28521079005971ED /* GetGnomesUseCase.swift */,
+				A729B4F5285742730058FE19 /* GetGnomesThumbnailUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		A7E3187E28521232005971ED /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				A7E3187F28521243005971ED /* DefaultGnomesRepository.swift */,
+				A729B4FC285755AD0058FE19 /* DefaultThumbnailRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		A7E31881285213BB005971ED /* GnomesScene */ = {
+			isa = PBXGroup;
+			children = (
+				A7E31888285214DA005971ED /* Router */,
+				A7E318832852141B005971ED /* GnomeDetail */,
+				A7E31882285213C8005971ED /* GnomesList */,
+			);
+			path = GnomesScene;
+			sourceTree = "<group>";
+		};
+		A7E31882285213C8005971ED /* GnomesList */ = {
+			isa = PBXGroup;
+			children = (
+				A7E318852852143A005971ED /* ViewModels */,
+				A7E318842852142A005971ED /* Views */,
+			);
+			path = GnomesList;
+			sourceTree = "<group>";
+		};
+		A7E318832852141B005971ED /* GnomeDetail */ = {
+			isa = PBXGroup;
+			children = (
+				A7E318A428523B5C005971ED /* ViewModels */,
+				A7E318A328523B52005971ED /* Views */,
+			);
+			path = GnomeDetail;
+			sourceTree = "<group>";
+		};
+		A7E318842852142A005971ED /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A7E31892285229D6005971ED /* Cells */,
+				A7E318862852149E005971ED /* GnomesListViewController.swift */,
+				A7E3188D28522882005971ED /* GnomesListViewController+Layout.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A7E318852852143A005971ED /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A7E3188B28522835005971ED /* GnomesListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A7E31888285214DA005971ED /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				A7E318892852150B005971ED /* GnomesRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		A7E3188F28522905005971ED /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A7E318902852290F005971ED /* UIView+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A7E31892285229D6005971ED /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				A7E31894285229F4005971ED /* GnomesListItemCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		A7E31899285231DA005971ED /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				A7E3189A285231E9005971ED /* AppDIContainer.swift */,
+				A7E3189F28523300005971ED /* GnomesSceneDIContainer.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		A7E3189C285231FB005971ED /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				A7E3189D2852320E005971ED /* AppConfigurations.swift */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		A7E318A328523B52005971ED /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A729B503285783CA0058FE19 /* Cells */,
+				A7E318A528523B6B005971ED /* GnomeDetailViewController.swift */,
+				A729B50828578A570058FE19 /* GnomeDetailViewController+Layout.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A7E318A428523B5C005971ED /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A7E318A728523B76005971ED /* GnomeDetailViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A7E3181E2851DE82005971ED /* Brastlewark */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7E318492851DE82005971ED /* Build configuration list for PBXNativeTarget "Brastlewark" */;
+			buildPhases = (
+				A7E3181B2851DE82005971ED /* Sources */,
+				A7E3181C2851DE82005971ED /* Frameworks */,
+				A7E3181D2851DE82005971ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Brastlewark;
+			productName = Brastlewark;
+			productReference = A7E3181F2851DE82005971ED /* Brastlewark.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A7E318342851DE82005971ED /* BrastlewarkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7E3184C2851DE82005971ED /* Build configuration list for PBXNativeTarget "BrastlewarkTests" */;
+			buildPhases = (
+				A7E318312851DE82005971ED /* Sources */,
+				A7E318322851DE82005971ED /* Frameworks */,
+				A7E318332851DE82005971ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A7E318372851DE82005971ED /* PBXTargetDependency */,
+			);
+			name = BrastlewarkTests;
+			productName = BrastlewarkTests;
+			productReference = A7E318352851DE82005971ED /* BrastlewarkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A7E3183E2851DE82005971ED /* BrastlewarkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7E3184F2851DE82005971ED /* Build configuration list for PBXNativeTarget "BrastlewarkUITests" */;
+			buildPhases = (
+				A7E3183B2851DE82005971ED /* Sources */,
+				A7E3183C2851DE82005971ED /* Frameworks */,
+				A7E3183D2851DE82005971ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A7E318412851DE82005971ED /* PBXTargetDependency */,
+			);
+			name = BrastlewarkUITests;
+			productName = BrastlewarkUITests;
+			productReference = A7E3183F2851DE82005971ED /* BrastlewarkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A7E318172851DE82005971ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					A7E3181E2851DE82005971ED = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					A7E318342851DE82005971ED = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = A7E3181E2851DE82005971ED;
+					};
+					A7E3183E2851DE82005971ED = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = A7E3181E2851DE82005971ED;
+					};
+				};
+			};
+			buildConfigurationList = A7E3181A2851DE82005971ED /* Build configuration list for PBXProject "Brastlewark" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A7E318162851DE82005971ED;
+			productRefGroup = A7E318202851DE82005971ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A7E3181E2851DE82005971ED /* Brastlewark */,
+				A7E318342851DE82005971ED /* BrastlewarkTests */,
+				A7E3183E2851DE82005971ED /* BrastlewarkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A7E3181D2851DE82005971ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7E3182F2851DE82005971ED /* LaunchScreen.storyboard in Resources */,
+				A7E3182C2851DE82005971ED /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7E318332851DE82005971ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7E3183D2851DE82005971ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A7E3181B2851DE82005971ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7E318912852290F005971ED /* UIView+Extensions.swift in Sources */,
+				A7E3187028520929005971ED /* ModelMappers.swift in Sources */,
+				A729B50928578A570058FE19 /* GnomeDetailViewController+Layout.swift in Sources */,
+				A7E318672851FBCA005971ED /* GnomeTO.swift in Sources */,
+				A7E3187A28520FF9005971ED /* GnomesRepository.swift in Sources */,
+				A7E318612851EC4C005971ED /* NetworkService.swift in Sources */,
+				A729B4F8285749EE0058FE19 /* ThumbnailRepository.swift in Sources */,
+				A7E3186A2851FC6F005971ED /* ApiManager.swift in Sources */,
+				A729B4F6285742730058FE19 /* GetGnomesThumbnailUseCase.swift in Sources */,
+				A729B4FD285755AD0058FE19 /* DefaultThumbnailRepository.swift in Sources */,
+				A7E3187528520B26005971ED /* Mapper.swift in Sources */,
+				A7E318A628523B6B005971ED /* GnomeDetailViewController.swift in Sources */,
+				A7E3188028521243005971ED /* DefaultGnomesRepository.swift in Sources */,
+				A7E318872852149E005971ED /* GnomesListViewController.swift in Sources */,
+				A7E318A228523769005971ED /* AppRouterCoordinator.swift in Sources */,
+				A7E318592851E461005971ED /* Gnome.swift in Sources */,
+				A729B507285783EB0058FE19 /* GnomeDetailItemCell.swift in Sources */,
+				A7E3187728520BA5005971ED /* NetworkTask.swift in Sources */,
+				A7E3185D2851E86E005971ED /* Endpoint.swift in Sources */,
+				A7E3188C28522835005971ED /* GnomesListViewModel.swift in Sources */,
+				A7E3188A2852150B005971ED /* GnomesRouter.swift in Sources */,
+				A7E318AA2852408C005971ED /* ResponseTO.swift in Sources */,
+				A7E3188E28522882005971ED /* GnomesListViewController+Layout.swift in Sources */,
+				A7E318642851FB68005971ED /* APIEndpoints.swift in Sources */,
+				A7E318A828523B76005971ED /* GnomeDetailViewModel.swift in Sources */,
+				A7E3189B285231E9005971ED /* AppDIContainer.swift in Sources */,
+				A7E3187328520B18005971ED /* Cancellable.swift in Sources */,
+				A7E318232851DE82005971ED /* AppDelegate.swift in Sources */,
+				A7E318A028523300005971ED /* GnomesSceneDIContainer.swift in Sources */,
+				A7E3185F2851E9A6005971ED /* NetworkConfiguration.swift in Sources */,
+				A7E31895285229F4005971ED /* GnomesListItemCell.swift in Sources */,
+				A7E3187D28521079005971ED /* GetGnomesUseCase.swift in Sources */,
+				A7E3189E2852320E005971ED /* AppConfigurations.swift in Sources */,
+				A729B5002857582A0058FE19 /* FileCacheStorage.swift in Sources */,
+				A7E3186D285208C6005971ED /* ApiCompletionTransformer.swift in Sources */,
+				A729B505285783DA0058FE19 /* GnomeDetailHeaderView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7E318312851DE82005971ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7E3183A2851DE82005971ED /* BrastlewarkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7E3183B2851DE82005971ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7E318442851DE82005971ED /* BrastlewarkUITests.swift in Sources */,
+				A7E318462851DE82005971ED /* BrastlewarkUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A7E318372851DE82005971ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7E3181E2851DE82005971ED /* Brastlewark */;
+			targetProxy = A7E318362851DE82005971ED /* PBXContainerItemProxy */;
+		};
+		A7E318412851DE82005971ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A7E3181E2851DE82005971ED /* Brastlewark */;
+			targetProxy = A7E318402851DE82005971ED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A7E3182D2851DE82005971ED /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A7E3182E2851DE82005971ED /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A7E318472851DE82005971ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A7E318482851DE82005971ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A7E3184A2851DE82005971ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Brastlewark/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.carles.garcia.Brastlewark;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A7E3184B2851DE82005971ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Brastlewark/Resources/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.carles.garcia.Brastlewark;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A7E3184D2851DE82005971ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.carles.garcia.BrastlewarkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Brastlewark.app/Brastlewark";
+			};
+			name = Debug;
+		};
+		A7E3184E2851DE82005971ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.carles.garcia.BrastlewarkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Brastlewark.app/Brastlewark";
+			};
+			name = Release;
+		};
+		A7E318502851DE82005971ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.carles.garcia.BrastlewarkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Brastlewark;
+			};
+			name = Debug;
+		};
+		A7E318512851DE82005971ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.carles.garcia.BrastlewarkUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Brastlewark;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A7E3181A2851DE82005971ED /* Build configuration list for PBXProject "Brastlewark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7E318472851DE82005971ED /* Debug */,
+				A7E318482851DE82005971ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7E318492851DE82005971ED /* Build configuration list for PBXNativeTarget "Brastlewark" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7E3184A2851DE82005971ED /* Debug */,
+				A7E3184B2851DE82005971ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7E3184C2851DE82005971ED /* Build configuration list for PBXNativeTarget "BrastlewarkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7E3184D2851DE82005971ED /* Debug */,
+				A7E3184E2851DE82005971ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7E3184F2851DE82005971ED /* Build configuration list for PBXNativeTarget "BrastlewarkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7E318502851DE82005971ED /* Debug */,
+				A7E318512851DE82005971ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A7E318172851DE82005971ED /* Project object */;
+}
