@@ -14,6 +14,9 @@
 		A729B505285783DA0058FE19 /* GnomeDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A729B504285783DA0058FE19 /* GnomeDetailHeaderView.swift */; };
 		A729B507285783EB0058FE19 /* GnomeDetailItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A729B506285783EB0058FE19 /* GnomeDetailItemCell.swift */; };
 		A729B50928578A570058FE19 /* GnomeDetailViewController+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A729B50828578A570058FE19 /* GnomeDetailViewController+Layout.swift */; };
+		A78122D228588B850050630C /* GnomesRepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78122D128588B850050630C /* GnomesRepositoryTest.swift */; };
+		A78122D528588BF70050630C /* MockApiMananger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78122D428588BF70050630C /* MockApiMananger.swift */; };
+		A78122D82858A0960050630C /* MethodMocked.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78122D72858A0950050630C /* MethodMocked.swift */; };
 		A7E318232851DE82005971ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E318222851DE82005971ED /* AppDelegate.swift */; };
 		A7E3182C2851DE82005971ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7E3182B2851DE82005971ED /* Assets.xcassets */; };
 		A7E3182F2851DE82005971ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7E3182D2851DE82005971ED /* LaunchScreen.storyboard */; };
@@ -75,6 +78,9 @@
 		A729B504285783DA0058FE19 /* GnomeDetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GnomeDetailHeaderView.swift; sourceTree = "<group>"; };
 		A729B506285783EB0058FE19 /* GnomeDetailItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GnomeDetailItemCell.swift; sourceTree = "<group>"; };
 		A729B50828578A570058FE19 /* GnomeDetailViewController+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GnomeDetailViewController+Layout.swift"; sourceTree = "<group>"; };
+		A78122D128588B850050630C /* GnomesRepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GnomesRepositoryTest.swift; sourceTree = "<group>"; };
+		A78122D428588BF70050630C /* MockApiMananger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockApiMananger.swift; sourceTree = "<group>"; };
+		A78122D72858A0950050630C /* MethodMocked.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethodMocked.swift; sourceTree = "<group>"; };
 		A7E3181F2851DE82005971ED /* Brastlewark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Brastlewark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7E318222851DE82005971ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7E3182B2851DE82005971ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -157,6 +163,40 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		A78122CF28588AB90050630C /* DataTest */ = {
+			isa = PBXGroup;
+			children = (
+				A78122D62858A08C0050630C /* Utils */,
+				A78122D328588BE70050630C /* Network */,
+				A78122D028588AC10050630C /* Repositories */,
+			);
+			path = DataTest;
+			sourceTree = "<group>";
+		};
+		A78122D028588AC10050630C /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				A78122D128588B850050630C /* GnomesRepositoryTest.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		A78122D328588BE70050630C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A78122D428588BF70050630C /* MockApiMananger.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A78122D62858A08C0050630C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A78122D72858A0950050630C /* MethodMocked.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		A7E318162851DE82005971ED = {
 			isa = PBXGroup;
 			children = (
@@ -184,7 +224,6 @@
 				A7E318532851E40C005971ED /* Data */,
 				A7E318522851E406005971ED /* Domain */,
 				A7E318542851E411005971ED /* Presentation */,
-				A7E3185A2851E859005971ED /* Infrastructure */,
 				A7E318552851E417005971ED /* Resources */,
 			);
 			path = Brastlewark;
@@ -193,6 +232,7 @@
 		A7E318382851DE82005971ED /* BrastlewarkTests */ = {
 			isa = PBXGroup;
 			children = (
+				A78122CF28588AB90050630C /* DataTest */,
 				A7E318392851DE82005971ED /* BrastlewarkTests.swift */,
 			);
 			path = BrastlewarkTests;
@@ -221,7 +261,7 @@
 		A7E318532851E40C005971ED /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				A729B4FE285758190058FE19 /* CacheStorage */,
+				A7E3185A2851E859005971ED /* Infrastructure */,
 				A7E318622851FB5C005971ED /* Network */,
 			);
 			path = Data;
@@ -268,6 +308,7 @@
 		A7E3185A2851E859005971ED /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
+				A729B4FE285758190058FE19 /* CacheStorage */,
 				A7E3185B2851E862005971ED /* Network */,
 			);
 			path = Infrastructure;
@@ -645,6 +686,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7E3183A2851DE82005971ED /* BrastlewarkTests.swift in Sources */,
+				A78122D82858A0960050630C /* MethodMocked.swift in Sources */,
+				A78122D228588B850050630C /* GnomesRepositoryTest.swift in Sources */,
+				A78122D528588BF70050630C /* MockApiMananger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

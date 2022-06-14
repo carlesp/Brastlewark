@@ -18,4 +18,8 @@ struct ResponseTO<T: Decodable>: Decodable {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         data = try values.decode(T.self, forKey: .data)
     }
+    
+    init(data: T) {
+        self.data = data
+    }
 }
